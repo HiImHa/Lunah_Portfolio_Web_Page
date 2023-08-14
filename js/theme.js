@@ -5,7 +5,7 @@ const blueLightTheme = {
     BgColorHeaderClassName: "bg-header--color",
     TextNavbarColor: "#000000",
     ColorOppositeLightDark: "#000000",
-    ColorSameLightDark:"#ffffff",
+    ColorSameLightDark: "#ffffff",
     WelcomeImg: "url(./img/wallpaper/wallpaper-blue.png",
     AboutImg: "img/girl.jpg",
     ContactImg: "img/contact-gif.gif",
@@ -19,7 +19,7 @@ const blueDarkTheme = {
     BgColorHeaderClassName: "bg-header--color-gray",
     TextNavbarColor: "#cbcbcb",
     ColorOppositeLightDark: "#ffffff",
-    ColorSameLightDark:"#000000",
+    ColorSameLightDark: "#000000",
     WelcomeImg: "url(./img/wallpaper/wallpaper-blue-dark.png",
     AboutImg: "img/girl.jpg",
     ContactImg: "img/contact-gif.gif",
@@ -35,7 +35,7 @@ const pinkLightTheme = {
     BgColorHeaderClassName: "bg-header--color-pink",
     TextNavbarColor: "#000000",
     ColorOppositeLightDark: "#000000",
-    ColorSameLightDark:"#ffffff",
+    ColorSameLightDark: "#ffffff",
     WelcomeImg: "url(./img/wallpaper/wallpaper-pink.jpg",
     AboutImg: "img/girl-pink.png",
     ContactImg: "img/contact-gif-pink.gif",
@@ -48,7 +48,7 @@ const pinkDarkTheme = {
     BgColorHeaderClassName: "bg-header--color-gray",
     TextNavbarColor: "#cbcbcb",
     ColorOppositeLightDark: "#ffffff",
-    ColorSameLightDark:"#000000",
+    ColorSameLightDark: "#000000",
     WelcomeImg: "url(./img/wallpaper/wallpaper-pink-dark.jpg",
     AboutImg: "img/girl-pink.png",
     ContactImg: "img/contact-gif-pink.gif",
@@ -57,7 +57,7 @@ const pinkDarkTheme = {
 
 // FUNCTION
 // Toggle theme-dropdown Btn 
-function themeDropDownToggle(){
+function themeDropDownToggle() {
     const themeDropDown = document.querySelector('#theme-dropdown')
     themeDropDown.classList.toggle("display-flex");
 }
@@ -72,13 +72,13 @@ function changeBgColor(themeObj) {
 //bg header 
 function changeBgColorHeader(themeObj) {
     let header = document.querySelector('header');
-        header.classList.replace(header.classList[0],themeObj.BgColorHeaderClassName);
+    header.classList.replace(header.classList[0], themeObj.BgColorHeaderClassName);
 }
 
 // change theme color
 function changeThemeColor(themeObj) {
     let themeColor = document.querySelectorAll('.bg-theme--color');
-    themeColor.forEach(element =>{
+    themeColor.forEach(element => {
         element.style.backgroundColor = themeObj.ThemeColor;
         element.style.border = themeObj.ThemeColor;
     })
@@ -87,7 +87,7 @@ function changeThemeColor(themeObj) {
 // change second theme color
 function changeThemeSecondColor(themeObj) {
     let themeColor = document.querySelectorAll('.bg--color-second-light');
-    themeColor.forEach(element =>{
+    themeColor.forEach(element => {
         element.style.backgroundColor = themeObj.BgColorSecond;
     })
 }
@@ -98,16 +98,16 @@ function changeThemeSecondColor(themeObj) {
 function changeTextColorOfNavbar(themeObj) {
     let text = document.querySelectorAll('#nav ul li a');
     text.forEach(element => {
-        element.style.color =themeObj.TextNavbarColor;
+        element.style.color = themeObj.TextNavbarColor;
     })
     let textPink = document.querySelectorAll('#nav-pink ul li a');
     textPink.forEach(element => {
-        element.style.color =themeObj.TextNavbarColor;
+        element.style.color = themeObj.TextNavbarColor;
     })
 }
 
 // display based on theme
-function displayforBlue(){
+function displayforBlue() {
     let navBlue = document.querySelector('#nav');
     let navBlueToggle = document.querySelector('#nav-btn--toggle');
     let navPink = document.querySelector('#nav-pink');
@@ -121,22 +121,22 @@ function displayforBlue(){
     let TimeLineBlue = document.querySelector(".timeline");
     let TimeLinePink = document.querySelector(".timeline-pink");
 
-    navBlue.classList.replace("display-none","display-flex");
-    navBlueToggle.classList.replace("display-none","display-flex");
-    navPink.classList.replace("display-flex","display-none");
-    navPinkToggle.classList.replace("display-flex","display-none");
+    navBlue.classList.replace("display-none", "display-flex");
+    navBlueToggle.classList.replace("display-none", "display-flex");
+    navPink.classList.replace("display-flex", "display-none");
+    navPinkToggle.classList.replace("display-flex", "display-none");
 
-    btnSlideLeft.classList.replace("display-none","display-flex");
-    btnSlideLeftPink.classList.replace("display-flex","display-none"); 
+    btnSlideLeft.classList.replace("display-none", "display-flex");
+    btnSlideLeftPink.classList.replace("display-flex", "display-none");
 
-    imgWelcome.style.display ="flex";
+    imgWelcome.style.display = "flex";
 
-    TimeLineBlue.classList.replace("display-none","display-block");
-    TimeLinePink.classList.replace("display-block","display-none");
-    
+    TimeLineBlue.classList.replace("display-none", "display-block");
+    TimeLinePink.classList.replace("display-block", "display-none");
+
 
 }
-function displayforPink(){
+function displayforPink() {
     let navBlue = document.querySelector('#nav');
     let navBlueToggle = document.querySelector('#nav-btn--toggle');
     let navPink = document.querySelector('#nav-pink');
@@ -151,18 +151,18 @@ function displayforPink(){
     let TimeLinePink = document.querySelector(".timeline-pink");
 
 
-    navPink.classList.replace("display-none","display-flex");
-    navPinkToggle.classList.replace("display-none","display-flex");
-    navBlue.classList.replace("display-flex","display-none");
-    navBlueToggle.classList.replace("display-flex","display-none");
+    navPink.classList.replace("display-none", "display-flex");
+    navPinkToggle.classList.replace("display-none", "display-flex");
+    navBlue.classList.replace("display-flex", "display-none");
+    navBlueToggle.classList.replace("display-flex", "display-none");
 
-    btnSlideLeft.classList.replace("display-flex","display-none");
-    btnSlideLeftPink.classList.replace("display-none","display-flex"); 
+    btnSlideLeft.classList.replace("display-flex", "display-none");
+    btnSlideLeftPink.classList.replace("display-none", "display-flex");
 
-    imgWelcome.style.display ="none";
+    imgWelcome.style.display = "none";
 
-    TimeLineBlue.classList.replace("display-block","display-none");
-    TimeLinePink.classList.replace("display-none","display-block");
+    TimeLineBlue.classList.replace("display-block", "display-none");
+    TimeLinePink.classList.replace("display-none", "display-block");
 
 }
 
@@ -222,36 +222,67 @@ function SetTheme() {
     return themeObj;
 }
 
-function BlueLightTheme(){
+
+function setThemeBtnBlue(btn, otherBtn1) {
+    let ThemeBtn = document.getElementById(btn);
+    let Btn1 = document.getElementById(otherBtn1);
+    ThemeBtn.style.backgroundColor = "rgba(113, 173, 219, 0.248)";
+    Btn1.style.backgroundColor = "#fff";
+    document.getElementById('pink-light').style.backgroundColor = "#fff";
+    document.getElementById('pink-dark').style.backgroundColor = "#fff";
+
+
+}
+
+function setThemeBtnPink(btn, otherBtn1) {
+    let ThemeBtn = document.getElementById(btn);
+    let Btn1 = document.getElementById(otherBtn1);
+
+    ThemeBtn.style.backgroundColor = "rgba(113, 173, 219, 0.248)";
+    Btn1.style.backgroundColor = "#fff";
+    document.getElementById('blue-light').style.backgroundColor = "#fff";
+    document.getElementById('blue-dark').style.backgroundColor = "#fff";
+
+
+}
+
+function BlueLightTheme() {
     themeDropDownToggle();
     displayforBlue();
     var themeObj = blueLightTheme;
     ExecuteThemeFunction(themeObj);
+    setThemeBtnBlue('blue-light', 'blue-dark')
 }
 
-function BlueDarkTheme(themeObj){
+function BlueDarkTheme(themeObj) {
     themeDropDownToggle();
     displayforBlue();
     var themeObj = blueDarkTheme;
     ExecuteThemeFunction(themeObj);
+    setThemeBtnBlue('blue-dark', 'blue-light')
+
 }
 
-function PinkLightTheme(){
+function PinkLightTheme() {
     themeDropDownToggle(themeObj);
     displayforPink();
     var themeObj = pinkLightTheme;
     ExecuteThemeFunction(themeObj);
+    setThemeBtnPink('pink-light', 'pink-dark')
+
 }
 
-function PinkDarkTheme(){
+function PinkDarkTheme() {
     themeDropDownToggle();
     displayforPink();
-    var themeObj = pinkDarkTheme;   
+    var themeObj = pinkDarkTheme;
     ExecuteThemeFunction(themeObj);
+    setThemeBtnPink('pink-dark', 'pink-light')
+
 }
 
 // Execute Function
-function ExecuteThemeFunction(themeObj){
+function ExecuteThemeFunction(themeObj) {
     changeBgColor(themeObj);
     changeBgColorHeader(themeObj);
     changeThemeColor(themeObj);
@@ -262,7 +293,6 @@ function ExecuteThemeFunction(themeObj){
     changeBgExpEduContainer(themeObj);
     changeThemeSecondColor(themeObj);
 };
-
 
 
 

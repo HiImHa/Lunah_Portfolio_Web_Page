@@ -4,7 +4,7 @@ const themeDropDownBtn = document.querySelector('#theme');
 const themeDropDownList = document.querySelector('#theme-dropdown');
 
 themeDropDownBtn.onclick = function () {
-    themeDropDownList.classList.toggle("display-flex");
+    themeDropDownList.classList.toggle("show-theme-dropdown");
 };
 
 
@@ -75,9 +75,9 @@ const navDropDownBtnPink = document.querySelector('#nav-btn--toggle-pink');
 const navDropDownPink = document.querySelector('#nav-pink ul');
 const navDropDownIconPink = document.querySelectorAll('#nav-btn--toggle-pink i');
 
-navBtnOnClick(navDropDownBtnBlue,navDropDownBlue,navDropDownIconBlue);
-navBtnOnClick(navDropDownBtnPink,navDropDownPink,navDropDownIconPink);
-function navBtnOnClick(navDropDownBtn,navDropDown,navDropDownIcon){
+navBtnOnClick(navDropDownBtnBlue, navDropDownBlue, navDropDownIconBlue);
+navBtnOnClick(navDropDownBtnPink, navDropDownPink, navDropDownIconPink);
+function navBtnOnClick(navDropDownBtn, navDropDown, navDropDownIcon) {
     navDropDownBtn.onclick = function () {
         navDropDown.classList.toggle("display-flex");
         navDropDownIcon.forEach((i) => {
@@ -90,10 +90,35 @@ function navBtnOnClick(navDropDownBtn,navDropDown,navDropDownIcon){
                 i.classList.remove("display-none");
             }
         });
-    
+
     };
 }
 
+// Expand card
+
+const expandButtonHTMLCSS = document.querySelector('#html-css-expand-button');
+const expandDropdownHTMLCSS = document.querySelector('#html-css-skill-content-container');
+const rotateIconHTMLCSS = document.querySelector('#html-css-expand-button-icon');
+expandButtonOnClick(rotateIconHTMLCSS, expandButtonHTMLCSS, expandDropdownHTMLCSS);
+
+const expandButtonJS = document.querySelector('#js-expand-button');
+const expandDropdownJS = document.querySelector('#js-skill-content-container');
+const rotateIconJS = document.querySelector('#js-expand-button-icon');
+expandButtonOnClick(rotateIconJS, expandButtonJS, expandDropdownJS);
+
+const expandButtonreact = document.querySelector('#react-expand-button');
+const expandDropdownreact = document.querySelector('#react-skill-content-container');
+const rotateIconreact = document.querySelector('#react-expand-button-icon');
+expandButtonOnClick(rotateIconreact, expandButtonreact, expandDropdownreact);
+
+
+function expandButtonOnClick(rotate, expand, dropdown) {
+    expand.onclick = function () {
+        rotate.classList.toggle("show-expand-button-icon");
+        expand.classList.toggle("show-expand-button");
+        dropdown.classList.toggle("show-skill-content-container");
+    };
+}
 
 
 

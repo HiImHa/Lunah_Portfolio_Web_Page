@@ -62,6 +62,7 @@
         </div>
         <!-- themeBtn -->
         <div id="theme" class="cursor-pointer">
+            <div>Theme</div>
             <img src="img/icon/icon-theme-general.png" style="width: 25px;height: 25px;">
         </div>
         <div id="theme-dropdown">
@@ -114,7 +115,7 @@
                 - Sherlock Holmes.
             </h3>
             <div class="flex--column button-wrap flex--item-start ">
-                <a href="https://github.com/HiImHa" class="bg-theme--color button">
+                <a href="https://github.com/HiImHa" target="_blank" class="bg-theme--color button">
                     <i class='bg-theme--color padding--right-10px bx bxl-github'></i> My Github
                 </a>
                 <a href="#contact" class="button--slide-left display-flex">
@@ -151,29 +152,178 @@
         </div>
     </section>
 
+
+
+
     <!-- Skills Section -->
     <section id="skills" class="bg--color-second-light flex--column flex--item-center fade fade-bottom">
         <div class="text--color-blue text--font-50px text-title">
             skills
         </div>
-        <div class="text--font-35px text--color-black text-uppercase-bolder">
+        <div class="text--font-35px text--color-black">
             Programming Skills
         </div>
-        <div class="flex--row">
-            <div class="bg-theme--color flex--column flex--item-center tag">
-                <i class='bx bxl-html5'></i>
-                <p>HTML</p>
+        <p style="font-size: 20px; margin-top: 10px;"><i>Click on card belows to expand to see skills related
+                projects.</i></p>
+        <div class="skills-wrap">
+
+            <div id="html-css" class="skill-container">
+                <div class="expand-button" id="html-css-expand-button">
+                    <div class="expand-button-logo">
+                        <i class='bx bxl-html5'></i>
+                        <p>HTML</p>
+                        <p> - </p>
+                        <i class='bx bxl-css3'></i>
+                        <p>CSS</p>
+                    </div>
+                    <span class="expand-button-icon" id="html-css-expand-button-icon"
+                        style="display: flex; align-items: center;">
+                        <i class='bx bx-left-arrow-alt'></i>
+                    </span>
+
+                </div>
+                <div class="skill-content-container" id="html-css-skill-content-container">
+                    <div href="#" class="technique-card">
+                        <div class="technique-img">
+                            <img src="./img/html-css-prj-1.png" alt="">
+                        </div>
+                        <div class="technique-text">
+                            <h1> HTML - CSS Practice </h1>
+                            <ul style="padding: 10px; margin-left: 5px;">
+                                <li>
+                                    The collection of HTML/CSS templates during my practice and
+                                    creation
+                                </li>
+                                <li style="margin-top: 10px;">
+                                    More details:
+                                    <a class="text-lowercase-bolder"
+                                        href="https://hiimha.github.io/html-css-practice/">https://hiimha.github.io/html-css-practice/</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="bg-theme--color flex--column flex--item-center tag">
-                <i class='bx bxl-css3'></i>
-                <p>CSS</p>
+
+            <div id="js" class="skill-container">
+                <div class="expand-button" id="js-expand-button">
+                    <div class="expand-button-logo">
+                        <i class='bx bxs-file-js'></i>
+                        <p>Javascript</p>
+                    </div>
+                    <span class="expand-button-icon" id="js-expand-button-icon"> <i
+                            class='bx bx-left-arrow-alt'></i></span>
+                </div>
+                <div class="skill-content-container" id="js-skill-content-container">
+                    <div href="#" class="technique-card">
+                        <div class="technique-img">
+                            <img src="./img/js-prj-to-do-list.png" alt="">
+                        </div>
+                        <div class="technique-text">
+                            <h1> To Do List Website </h1>
+                            <ul style="padding: 10px; margin-left: 5px;">
+                                <li>
+                                    Add new task,
+                                    Edit task,
+                                    Remove task,
+                                    Remove all tasks,
+                                    Store tasks at Local Storage.
+                                </li>
+                                <li style="margin-top: 10px;">
+                                    Link:
+                                    <a class="text-lowercase-bolder"
+                                        href="https://hiimha.github.io/to-do-list/">https://hiimha.github.io/to-do-list/</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div href="#" class="technique-card">
+                        <div class="technique-img">
+                            <img src="./img/js-prj-weather-app.png" alt="">
+                        </div>
+                        <div class="technique-text">
+                            <h1> Weather app </h1>
+                            <ul style="padding: 10px; margin-left: 5px;">
+                                <li>
+                                    Provide information of weather. Input the city name and current location
+                                    at use weather API.
+                                </li>
+                                <li style="margin-top: 10px;">
+                                    Link:
+                                    <a class="text-lowercase-bolder"
+                                        href="hhttps://hiimha.github.io/weather-app/">https://hiimha.github.io/weather-app/</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="bg-theme--color flex--column flex--item-center tag">
-                <i class='bx bxl-javascript'></i>
-                <p>Javascript</p>
+
+            <div id="react" class="skill-container">
+                <div class="expand-button" id="react-expand-button">
+                    <div class="expand-button-logo">
+                        <i class='bx bxl-react'></i>
+                        <p>React</p>
+                    </div>
+                    <span class="expand-button-icon" id="react-expand-button-icon"> <i
+                            class='bx bx-left-arrow-alt'></i></span>
+                </div>
+                <div class="skill-content-container" id="react-skill-content-container">
+                    <div href="#" class="technique-card">
+                        <div class="technique-img">
+                            <img src="./img/react-prj-tic-tac-toe.png" alt="">
+                        </div>
+                        <div class="technique-text">
+                            <h1> Tic Tac Toe </h1>
+                            <ul style="padding: 10px; margin-left: 5px;">
+                                <li>
+                                    An interactive tic-tac-toe game.
+                                    Define winner or tie result.
+                                    Showing the past move.
+                                </li>
+                                <li style="margin-top: 10px;">
+                                    Link:
+                                    <a class="text-lowercase-bolder"
+                                        href="https://hiimha.github.io/tic-tac-toe/">https://hiimha.github.io/tic-tac-toe/</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div href="#" class="technique-card">
+                        <div class="technique-img">
+                            <img src="./img/react-prj-outer-space.png" alt="">
+                        </div>
+                        <div class="technique-text">
+                            <h1> Outer Space </h1>
+                            <ul style="padding: 10px; margin-left: 5px;">
+                                <li>
+                                    An Astronomy website.
+                                </li>
+                                <li style="margin-top: 7px;">
+                                    Link:
+                                    <a class="text-lowercase-bolder"
+                                        href="https://outer-space-psi.vercel.app/">https://outer-space-psi.vercel.app/</a>
+                                </li>
+                                <li style="margin-top: 10px;">
+                                    GitHub repository:
+                                    <a class="text-lowercase-bolder"
+                                        href="https://github.com/HiImHa/outer-space/">https://github.com/HiImHa/outer-space/</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
+
+
+
+
+
         </div>
-        <div class="text--font-35px text--color-black text-uppercase-bolder">
+
+        <div class="text--font-35px text--color-black">
             Other Skills
         </div>
         <div class="flex--row">
@@ -182,12 +332,13 @@
                     <div class="text--color-white bg-theme--color position-absolute flip-card-front">
                         <h1>Language Skill</h1>
                         <img title="skills" src="img/language.png" alt="Avatar"
-                            style="width:200px;height:170px;border-radius: 10px;">
+                            style="width:200px;height:170px;border-radius: 0 0 10px 10px;">
                     </div>
                     <div class="text--color-white bg-theme--color position-absolute flip-card-back">
                         <h1>English</h1>
                         <p class="text-font-20px-px">Immediate level</p>
-                        <p class="text-font-20px-px">VNU-EPT Certificate of Vietnam National University: B1 - Equivilemnt to Ielts 6.0 </p>
+                        <p class="text-font-20px-px">VNU-EPT Certificate of Vietnam National University: B1 -
+                            Equivilemnt to Ielts 6.0 </p>
                     </div>
                 </div>
             </div>
@@ -196,7 +347,7 @@
                     <div class="text--color-white bg-theme--color position-absolute flip-card-front">
                         <h1>Other Skills</h1>
                         <img title="skills" src="img/scrum.png" alt="Avatar"
-                            style="width:200px;height:170px;border-radius: 10px;">
+                            style="width:200px;height:170px;border-radius: 0 0 10px 10px;">
                     </div>
                     <div class="text--color-white bg-theme--color position-absolute flip-card-back">
                         <h1>SCRUM</h1>
@@ -208,13 +359,13 @@
             <div class="flip-card">
                 <div class="position-relative flip-card-inner">
                     <div class="text--color-white bg-theme--color position-absolute flip-card-front">
-                        <h1>Tools</h1>
+                        <h1>Version Control</h1>
                         <img title="skills" src="img/tools.jfif" alt="Avatar"
-                            style="width:200px;height:170px;border-radius: 10px;">
+                            style="width:200px;height:170px;border-radius: 0 0 10px 10px;">
                     </div>
                     <div class="text--color-white bg-theme--color position-absolute flip-card-back">
-                        <h1>GITHUB</h1>
-                        <p class="text--font-20px">I'm using github for my personal project</p>
+                        <h1>GITHUB & Vercel</h1>
+                        <p class="text--font-20px">I'm using Github and Vercel for my personal project</p>
                     </div>
                 </div>
             </div>
@@ -350,10 +501,15 @@
                     <a class="text-font-20px text--color-blue"
                         href="https://github.com/HiImHa">https://github.com/HiImHa</a>
                 </div>
+                <a style="margin-top: 20px; width: 150px; font-size: 20px; font-weight: 700;padding: 10px;"
+                    href="https://github.com/HiImHa" target="_blank" class="bg-theme--color button">
+                    <i class='bg-theme--color bx bxl-github'></i> My Github
+                </a>
                 <div class="button-wrap">
-                    <a class="button bg-theme--color" href="mailto:ngochaphan.work@gmail.com"><i
+                    <a style="padding: 10px;" class="button bg-theme--color" href="mailto:ngochaphan.work@gmail.com"><i
                             class='padding-right-10px bx bx-paper-plane'></i>Send me email
                         directly</a>
+
                 </div>
             </div>
         </div>
